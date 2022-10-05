@@ -1,0 +1,61 @@
+<!-- Enter your HTML code here -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="css/binaryCalculator.css" type="text/css">
+    </head>
+    <body>
+        <main id="container">
+
+            <div id="res"></div>
+            <div class="btns">
+                <section class="sub-cont" id="nums-cont">
+                    <button id="btn7" class="nums" onclick="addNum('7');">7</button>
+                    <button id="btn8" class="nums" onclick="addNum('8');">8</button>
+                    <button id="btn9" class="nums" onclick="addNum('9');">9</button>
+                    <button id="btn4" class="nums" onclick="addNum('4');">4</button>
+                    <button id="btn5" class="nums" onclick="addNum('5');">5</button>
+                    <button id="btn6" class="nums" onclick="addNum('6');">6</button>
+                    <button id="btn1" class="nums" onclick="addNum('1');">1</button>
+                    <button id="btn2" class="nums" onclick="addNum('2');">2</button>
+                    <button id="btn3" class="nums" onclick="addNum('3');">3</button>
+                    <button id="btn0" class="nums" onclick="addNum('0');">0</button>
+                </section>
+                <section class="sub-cont" id="btn-cont">
+                    <button id="btnClr" class="util" onclick="funClear();">Clear</button>
+                    <button id="btnC" class="util" onclick="funC();">C</button>
+                    <button id="btnDec" class="util" onclick="addNum('.');">,</button>
+                    <button id="btnEql" class="util" onclick="funEql();">=</button>
+                    
+                    <button id="btnSum" class="oprs" onclick="funOp('+');">+</button>
+                    <button id="btnSub" class="oprs" onclick="funOp('-');">-</button>
+                    <button id="btnMul" class="oprs" onclick="funOp('×');">×</button>
+                    <button id="btnDiv" class="oprs" onclick="funOp('÷');">÷</button>
+                    
+                </section>
+
+                <section class="sub-cont" id="time-cont">
+                    <button id="btnYear" class="time"   onclick="timeSet(' years ');">  years</button>
+                    <button id="btnMonth" class="time"  onclick="timeSet(' months ');"> months</button>
+                    <button id="btnDay" class="time"    onclick="timeSet(' days ');">   days</button>
+                    <button id="btnHour" class="time"   onclick="timeSet(' hours ');">  hours</button>
+                    <button id="btnMin" class="time"    onclick="timeSet(' mins ');">   mins</button>
+                    <button id="btnSec" class="time"    onclick="timeSet(' secs ');">   secs</button>
+
+                </section>
+                
+                
+                
+                
+                
+            </div>
+            
+            <p id="history-title">history</p>    
+            <div id="history"></div>
+            
+            <script src="js/binaryCalculator.js" type="text/javascript"></script> 
+        </main>
+        </body>
+        </html>
