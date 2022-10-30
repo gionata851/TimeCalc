@@ -22,7 +22,7 @@ header h1 {
 header p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: inline-block;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     margin-left: 12px;
     font-style: italic;
     position: relative;
@@ -54,6 +54,7 @@ nav{
     font-style: italic;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: lightblue;
+    white-space: nowrap;
     
 }
 
@@ -172,7 +173,7 @@ button{
 
     header p {
         position: absolute;
-        top: 51px;
+        top: 56px;
         left: 125px;
         margin-bottom: 0;
     }
@@ -188,11 +189,36 @@ button{
     }
 
     #container{
-        width: 95vw;
+        width: 90vw;
         
     }
 
     nav{
         font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width : 550px){
+
+    html{
+        font-size: 16px;
+    }
+
+    header p {
+        top: 48px;
+        left: 70px;
+    }
+
+    nav{
+        font-size: 0.65rem;
+        gap: 15px;
+        right: 5px;
+    }
+
+    #container{
+        width: 100vw;
+        min-width: none;
+        
+    
     }
 }
