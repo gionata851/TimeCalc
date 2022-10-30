@@ -1,10 +1,11 @@
 # TimeCalc
 ### Calculator for time measures
 
-Welcome to my time calculator! Visit it at: https://gionata851.github.io/TimeCalc/
+Welcome to my time calculator! Powerful, easy and mobile responsive!
+Visit it at: https://gionata851.github.io/TimeCalc/
 
 How to use:
-1. feel free to use the keyboard.
+1. if you're on a desktop/laptop, feel free to use the keyboard.
 2. normal operations without time measures are allowed.
 3. in order to use time measures start creating the first operator inserting a numer. For example 3:
 

@@ -59,7 +59,7 @@ function timeSet(unit){
   let pIntera6060 = Math.trunc(pFraz60 * 60);
   //if(tc_operatore == '-' || tc_operatore == '+') tc_operando2 = new Date(0);
   if((tc_operatore == '×' || tc_operatore == '÷') && tc_boolSecondoOperando){
-    tc_warning = 'non vanno usate grandezze nel secondo operando in caso di × o ÷';
+    tc_warning = 'you cannot use time measures in the second operand in case of × or ÷';
     document.getElementById("warn").innerHTML = tc_warning;
     return;
   }  
@@ -188,7 +188,7 @@ function funEql(){
       if (tc_operando2 instanceof Date && tc_operando2.getTime() != 0)
       tc_operando2 = tc_operando2.getTime();
       else{
-        tc_warning = 'inserire una grandezza temporale';
+        tc_warning = 'please insert a time measure';
         document.getElementById("warn").innerHTML = tc_warning;
         return;
       } 

@@ -2,6 +2,35 @@ body{
     background-color: #00061a;
 }
 
+html{
+    font-size: 16px;
+}
+
+header{
+    color: white;
+}
+
+header h1 {
+    display: inline-block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+    font-style: oblique;
+    margin-top: 15px;
+    
+}
+
+header p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: inline-block;
+    font-size: 0.9rem;
+    margin-left: 12px;
+    font-style: italic;
+    position: relative;
+    top: 13px;
+    right: 35px;
+    white-space: nowrap;
+}
+
 main{
     
     font-family: 'Oswald', 'Segoe UI', Tahoma,  Verdana, 'sans-serif';
@@ -13,8 +42,29 @@ main{
     height: 1em;
 }
 
+nav{
+    display: flex;
+    position: absolute;
+    top:35px;
+    right: 20px;
+    /*background-color: aliceblue;*/
+    width: 45vw;
+    justify-content: space-around;
+    font-size: 1rem;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: lightblue;
+    
+}
+
+a:visited{
+    color: rgb(255, 186, 255);
+    text-decoration: none;
+}
+
+
 #container{
-    width : 60%;
+    width : 80%;
     min-width: 480px;
     margin : auto;
 
@@ -24,7 +74,7 @@ button{
     /* width : 25%; */
     /* height : 36px; */
     height : 5vh;
-    font-size : 18px;
+    font-size : 1.13rem;
     margin : 0;
 }
 
@@ -43,11 +93,11 @@ button{
     background-color : lightgray;
     border : 2px solid darkgrey;
     height: 48px;
-    font-size : 20px;
+    font-size : 1.5rem;
     line-height: 45px;
 /*     position: relative;
     top:40%; */
-    margin-top: 60px;
+    margin-top: 10px;
     padding: 0 5px;
     /* text-align: right; */
 
@@ -105,11 +155,44 @@ button{
 #history-title{
     margin-top: 10vh;
     color: lightgrey;
+    font-size: 1.4rem;
 }
 #history{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: gainsboro;
-    
+    font-size: 1.05rem;
     padding: 3vh;
     line-height: 20px;
+}
+
+@media screen and (max-width : 850px){
+    html{
+        font-size: 21px;
+    }
+
+    header p {
+        position: absolute;
+        top: 51px;
+        left: 125px;
+        margin-bottom: 0;
+    }
+
+    header h1 {
+        margin: 0;
+    }
+
+    #warn{
+        color: red;
+        margin-top: 1vh;
+        height: 1em;
+    }
+
+    #container{
+        width: 95vw;
+        
+    }
+
+    nav{
+        font-size: 0.9rem;
+    }
 }
